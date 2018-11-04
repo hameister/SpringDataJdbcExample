@@ -1,9 +1,9 @@
-package org.hameister.filmwatcher;
+package org.hameister.nested;
 
-import org.hameister.filmwatcher.nested.Entity1;
-import org.hameister.filmwatcher.nested.Entity2;
-import org.hameister.filmwatcher.nested.Entity3;
-import org.hameister.filmwatcher.nested.Repository1;
+import org.hameister.nested.Entity1;
+import org.hameister.nested.Entity2;
+import org.hameister.nested.Entity3;
+import org.hameister.nested.Repository1;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class NestedTest {
         Entity2 entity2 = new Entity2("Entity2");
         Entity3 entity3 = new Entity3("Entity3");
         entity1.addElement(entity2);
-        entity2.addElement(entity3);
+     //   entity2.addElement(entity3);
         repository1.save(entity1);
 
 

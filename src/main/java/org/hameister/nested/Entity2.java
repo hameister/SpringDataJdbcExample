@@ -1,4 +1,4 @@
-package org.hameister.filmwatcher.nested;
+package org.hameister.nested;
 
 import org.springframework.data.annotation.Id;
 
@@ -10,7 +10,7 @@ public class Entity2 {
     long id;
     String name2;
 
-    Map<String,Entity3> map = new HashMap<>();
+//    Map<String,Entity3> map = new HashMap<>();
 
     public Entity2() {
     }
@@ -19,9 +19,9 @@ public class Entity2 {
         this.name2 = name2;
     }
 
-    public void  addElement(Entity3 entity3) {
-       map.put(entity3.name3, entity3);
-    }
+//    public void  addElement(Entity3 entity3) {
+//       map.put(entity3.name3, entity3);
+//    }
 
     public void setId(Long id) {
         this.id = id;

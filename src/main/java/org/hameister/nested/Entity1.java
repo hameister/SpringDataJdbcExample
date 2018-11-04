@@ -1,4 +1,4 @@
-package org.hameister.filmwatcher.nested;
+package org.hameister.nested;
 
 import org.springframework.data.annotation.Id;
 
